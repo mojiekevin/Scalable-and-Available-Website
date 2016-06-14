@@ -1,0 +1,12 @@
+browser init the request. servlet parse the cookie and find the session info.
+
+If session info not found
+session is created. session is sent to rpc and write to rpc server
+wait for wq
+
+If session is found rpc clinet read from rpc server
+update the session
+write back
+
+
+## hashmap operation happens only after the rpc server received the info
